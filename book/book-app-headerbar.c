@@ -60,10 +60,10 @@ gtk_stack_switcher_set_stack(stackSwitcher,stack);
   gtk_container_child_set (GTK_CONTAINER (stack), self->titleBtn_first, "title", "本地", NULL);
 
   //网络按键
-  self->titleBtn_second=gtk_button_new_with_label("微信");
+  self->titleBtn_second=gtk_button_new_with_label("远程");
   //gtk_container_add (GTK_CONTAINER (headerTitleBox), self->titleBtn_second);
     gtk_stack_add_named (GTK_STACK (stack), self->titleBtn_second, "本地");
-  gtk_container_child_set (GTK_CONTAINER (stack), self->titleBtn_second, "title", "微信", NULL);
+  gtk_container_child_set (GTK_CONTAINER (stack), self->titleBtn_second, "title", "远程", NULL);
 
   self->searchEntry= gtk_search_entry_new ();
   gtk_header_bar_pack_end(GTK_HEADER_BAR(self), self->searchEntry);

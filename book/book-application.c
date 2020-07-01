@@ -274,12 +274,12 @@ main (int argc, char *argv[])
 
   BookApplication *book_application;
   int status;
-g_set_prgname ("bebebook");
- g_set_application_name ("bebebook");
+g_set_prgname ("ebook");
+ g_set_application_name ("ebook");
 
   book_application = book_application_new ();
 
-  notify_init ("bebebook");
+  notify_init ("ebook");
   if(!g_thread_supported()) g_thread_init(NULL);
     gdk_threads_init();
 //gdk_threads_enter();

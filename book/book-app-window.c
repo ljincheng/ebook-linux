@@ -108,8 +108,8 @@ book_app_window_init(BookAppWindow *self)
   self->netFrame=book_erm_new(self);
   //gtk_frame_set_shadow_type (GTK_FRAME (self->netFrame), GTK_SHADOW_NONE);
   //gtk_container_add (GTK_CONTAINER (self), self->netFrame);
- gtk_stack_add_named (GTK_STACK (stack), self->netFrame, "微信");
-  gtk_container_child_set (GTK_CONTAINER (stack), self->netFrame, "title", "微信", NULL);
+ gtk_stack_add_named (GTK_STACK (stack), self->netFrame, "远程");
+  gtk_container_child_set (GTK_CONTAINER (stack), self->netFrame, "title", "远程", NULL);
 gtk_container_add (GTK_CONTAINER (self), stack);
 
   tab1=book_dev_bench_new(self);

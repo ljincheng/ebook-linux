@@ -6,7 +6,7 @@
 
 G_BEGIN_DECLS
 
-GtkWidget *APPAPINNER;
+static GtkWidget *APPAPINNER;
 
 #define BOOK_TYPE_APP_WINDOW (book_app_window_get_type())
 G_DECLARE_FINAL_TYPE (BookAppWindow, book_app_window, BOOK, APP_WINDOW, GtkApplicationWindow)

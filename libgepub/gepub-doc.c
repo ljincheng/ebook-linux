@@ -358,7 +358,33 @@ gepub_doc_get_content(GepubDoc *doc)
  *
  * Returns: (transfer full): metadata string
  */
-++
+gchar * gepub_doc_get_metadata(GepubDoc *doc,const gchar *mdata)
+{
+	xmlDoc *xdoc=NULL;
+	xmlNode *root_element=NULL;
+	xmlNode *mnode=NULL;
+	xmlNode *mdata_node=NULL;
+	gchar *ret;
+	xmlChar *text;
+	const char *data;
+	gsize size;
+
+	g_return_val_if_fail(GEPUB_IS_DOC(doc),NULL);
+	g_return_val_if_fail(mdata != NULL,NULL);
+	data = g_bytes_get_data(doc->content,&size);
+	xdoc = xmlRecoverMemory(data,size);
+	root_element = xmlDocGetRootElement(xdoc);
+	mnode = gepub_utils_get_element_by_tag(root_element,"metadata");
+	mdata_node = gepub_utils_get_element_by_tag(mnode,mdata);
+
+	text = xmlNodeGetContent(mdata_node);
+	ret = g_strdup((const char*)text);
+	xmlFree(text);
+	
+	xmlFreeDoc(xdoc);
+
+	return ret;
+}	
 
 /**
  * gepub_doc_get_resources:
