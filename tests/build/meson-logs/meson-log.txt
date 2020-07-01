@@ -1,0 +1,10 @@
+Build started at 2018-07-18T14:25:48.484854
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.46.1
+Source dir: /home/ljc/Projects/libgepub/tests
+Build dir: /home/ljc/Projects/libgepub/tests/build
+Build type: native build
+
+ERROR: First statement must be a call to project

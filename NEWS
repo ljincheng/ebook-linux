@@ -1,0 +1,54 @@
+Version 0.6.0
+=============
+
+ - Support setting font-family in GepubWidget
+ - Fix the gir generation
+ - widget: Fix warning at run-time
+ - lib: Fix gepub-widget chapter change signal
+
+Version 0.5.3
+=============
+
+ - Fixed SVG image resource replacement
+ - Rename introspection build option
+ - Removed autotools
+ - build: Conform to build-api expectations
+ - build: Remove default warning level
+ - build: Remove unused defines
+ - build: Improved linker script handling
+ - build: Set prefix-relative install_dir for libgepub
+ - build: Fix typo in symbol path creation
+ - tests: Fix crash on exit
+ - widget: Replace "100" with a constant
+ - widget: Don't change LC_NUMERIC at runtime
+
+Version 0.5.2
+=============
+
+ - Fixed gir version
+
+Version 0.5.1
+=============
+
+ - Added GError to gepub_doc_new new method
+ - Fixed meson build scripts
+
+Version 0.5
+===========
+
+ - Fixed page next and page prev signals
+ - Added file property to support GFile initialization
+ - Fixed some memory leaks
+ - Removed all compilation warnings
+ - Added pagination to the GepubWidget
+ - Added Simple text style modification in the widget
+ - Ported to meson build system
+ - Fixed epub:// SoupURI creation and concatenation
+
+Version 0.4
+===========
+
+ - Improve GepubDoc API
+ - Resource management inside the lib
+ - Better GTK+ doc and glib use
+ - New GepubWidget based on WebKitWebView

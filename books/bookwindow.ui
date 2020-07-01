@@ -1,0 +1,65 @@
+<interface>
+  <object class="GtkWindow" id="window">
+    <property name="icon-name">view-dual-symbolic</property>
+    <child type="titlebar">
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="orientation">horizontal</property>
+        <child>
+          <object class="GtkHeaderBar" id="sidebar-header">
+            <property name="visible">True</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkHeaderBar" id="main-header">
+            <property name="visible">1</property>
+            <property name="hexpand">True</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="orientation">horizontal</property>
+        <child>
+            <object class="GtkScrolledWindow" id="sidebar-content">
+            <property name="visible">False</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+
+          </object>
+        </child>
+        <child>
+         <object class="GtkScrolledWindow" id="main-content">
+            <property name="visible">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="hscrollbar-policy">AUTOMATIC</property>
+            <property name="vscrollbar-policy">AUTOMATIC</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkSizeGroup">
+    <property name="mode">horizontal</property>
+    <widgets>
+      <widget name="sidebar-header"/>
+      <widget name="sidebar-content"/>
+    </widgets>
+  </object>
+  <object class="GtkSizeGroup">
+    <property name="mode">horizontal</property>
+    <widgets>
+      <widget name="main-header"/>
+      <widget name="main-content"/>
+    </widgets>
+  </object>
+</interface>

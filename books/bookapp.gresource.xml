@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+   <gresource prefix="/bebebookapp">
+     <file>bookwindow.ui</file>
+       <file>decor1.png</file>
+       <file>decor2.png</file>
+       <file>gnome-fs-directory.png</file>
+       <file>gnome-fs-regular.png</file>
+       <file>gnome-gsame.png</file>
+  </gresource>
+</gresources>

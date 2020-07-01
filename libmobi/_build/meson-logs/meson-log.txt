@@ -1,0 +1,10 @@
+Build started at 2018-08-08T22:31:49.236981
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.47.1
+Source dir: /workspace/code/gcc/gnome/libgepub/libmobi
+Build dir: /workspace/code/gcc/gnome/libgepub/libmobi/_build
+Build type: native build
+
+ERROR: First statement must be a call to project
