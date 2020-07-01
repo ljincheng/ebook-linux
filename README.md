@@ -15,6 +15,7 @@
 
 1、安装
 
+```
  meson
 
  sudo dnf install meson gcc webkit2gtk3-devel libarchive-devel redhat-rpm-config     libsqlite3x-devel curl-devel poppler-glib-devel
@@ -26,7 +27,7 @@
  sudo dnf install 'pkgconfig(libsecret-1)'
  sudo dnf install 'pkgconfig(libsoup-2.4)'
  sudo dnf install 'pkgconfig(webkit2gtk-4.0)'
- 
+ ```
  2、运行
  
  meson _build
