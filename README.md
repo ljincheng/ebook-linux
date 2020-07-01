@@ -30,11 +30,12 @@
  ```
  2、运行
  
+ ```
  meson _build
  cd _build
  ninja
  ./book/bookApp
-
+ ```
 
 ## fedora32 以上要安装以下
 sudo dnf install gobject-introspection-devel
